@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*
+ Theme Name:   Twenty Nineteen Child
+ Theme URI:    https://github.com/Knihovna-PedF-UK/twentynineteen-child
+ Description:  Twenty Nineteen Child Theme
+ Author:       Michal Hoftich
+ Author URI:   http://example.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      Apache License 2.0
+ License URI:  http://www.apache.org/licenses/
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentynineteenchild
+*/
+
+h2.woocommerce-loop-category__title{font-size:1.3em;}
+
+.woocommerce-ordering {
+  display: none;
+}
+
+p.site-title{
+  padding-top:0.3em;
+	font-size:2.3rem;
+}
+
+a{color:black;text-decoration:underline;font-weight: 300;}
+a:visited{color: #222;}
+a:hover{color: #444;}
