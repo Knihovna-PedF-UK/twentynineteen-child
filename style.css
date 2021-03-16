@@ -28,3 +28,7 @@ p.site-title{
 a{color:black;text-decoration:underline;font-weight: 300;}
 a:visited{color: #222;}
 a:hover{color: #444;}
+
+.site-title a{text-decoration:none;}
+.woocommerce-products-header h1.page-title{font-weight: normal;}
+mark.count{background-color: white;}
