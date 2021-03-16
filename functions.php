@@ -68,6 +68,9 @@ add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields2' )
 function custom_override_checkout_fields2( $fields ) {
   /* unset($fields['billing']['billing_first_name']); */
   /* unset($fields['billing']['billing_last_name']); */
+  $fields['order']['order_comments']['placeholder'] = 'Zkouším změnit nápovědu';
+  $fields['billing']['billing_first_name']['label'] = 'Jméno';
+
   unset($fields['billing']['billing_company']);
   unset($fields['billing']['billing_address_1']);
   unset($fields['billing']['billing_address_2']);
@@ -101,10 +104,21 @@ function bbloomer_translate_woocommerce_strings2( $translated, $untranslated, $d
             $translated = 'Kontaktní údaje';
             break;
  
+         case 'Fakturační':
+           $translated = "Kontaktní";
+           break;
+         case 'Fakturační Jméno':
+           $translated = "Jméno";
+           break;
+         case 'volitelný':
+           $translated = "volitelné";
+           break;
+
          case 'Product Description':
  
             $translated = 'Product Specifications';
             break;
+
  
          // ETC
        
